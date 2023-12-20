@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+   
+}
+.main{
+    height: 100vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 7%;
+}
+.logo{
+    display: flex;
+    gap: .5vw;
+}
+.nav-part{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 3vw;
+    margin-right: 6vw;
+}
+.logo>h1{
+    color: blueviolet;
+    font-size: 3.5vw;
+}
+.logo>p{
+    color: blueviolet;
+    transform: translateY(2.5vh);
+}
+
+.nav-part>button{
+    padding: 2vh 4vh ;
+    font-size: 1.5vw;
+    color:blueviolet;
+    background-color: white;
+    border-color: blueviolet;
+    border-radius: 2vh;
+}
+.menu-bar{
+    display: none;
+}
+.content{
+    display: flex;
+}
+.left{
+    width: 120vw;
+    padding: 8%;
+}
+.right{
+    width: 170vw;
+}
+.right>img{
+    height: 82vh;
+}
+.left h1{
+    font-size: 7vh;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.left p{
+    padding-top: 5%;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.left>.btn{
+    padding-top : 10%;
+}
+.left>.btn>.btn1{
+    padding: 3% 5%;
+    border-radius: 50vw;
+    background-color: white;
+    color: blueviolet;
+    font-size: 1.5vw;
+    border-color: blueviolet;
+}
+.left>.btn>.btn2{
+     margin-left: 5%;
+     padding: 3% 6%;
+     border-radius: 50vw;
+     background-color: white;
+    font-size: 1.5vw;
+     color: blueviolet;
+     border-color: blueviolet;
+}
+.left>.btn>.btn2:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.left>.btn>.btn1:hover{
+    background-color: blueviolet;
+    color: white;
+}
+@media(min-width:320px) and (max-width:600px){
+    .nav-part
+    {
+        display: none;
+    }
+    .logo>h1{
+        font-size: 8vw;
+    }
+    .logo>p{
+        transform: translateY(2vw);
+        font-size: 3vw;
+    }
+    .menu-bar{
+        display: initial;
+        font-size: 30px;
+        margin-right: -20%;
+    }
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .right{
+        width: 100vw;
+        height:70vh;
+    }
+     .right>img{
+       width:120vw;
+        height: 70vh;
+    }
+    .left >h1{
+        font-size:5.5vh;
+    }
+    .left >p{
+        font-size:5vw;
+    }
+    .left>.btn>.btn1{
+        width: 45vw;
+        height: 10vh;
+        font-size: 4vw;
+    }
+    .left>.btn>.btn2{
+        width: 45vw;
+        height: 10vh;
+        font-size: 4vw;
+
+    }
+}
